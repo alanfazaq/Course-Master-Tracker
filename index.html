@@ -104,6 +104,13 @@
             margin-bottom: 20px;
             flex-wrap: wrap; /* Membantu responsivitas */
         }
+        
+        /* Class tambahan untuk form input agar bisa dibuat responsif ke bawah */
+        .add-form {
+            display: flex;
+            gap: 10px;
+            flex: 2;
+        }
 
         input[type="text"] {
             flex: 1;
@@ -205,6 +212,10 @@
             .controls-group {
                 flex-direction: column;
             }
+            /* Memaksa elemen dalam form menjadi tumpukan (kolom) di layar sempit */
+            .add-form {
+                flex-direction: column;
+            }
             input[type="text"], button {
                 width: 100%;
             }
@@ -236,8 +247,8 @@
             <!-- Form & Filter Controls -->
             <section>
                 <div class="controls-group">
-                    <!-- Form Tambah -->
-                    <form id="add-form" style="display: flex; gap: 10px; flex: 2;">
+                    <!-- Form Tambah (Inline style dipindah ke class .add-form) -->
+                    <form id="add-form" class="add-form">
                         <label for="module-input" class="sr-only">Tambah Materi Baru</label>
                         <input type="text" id="module-input" placeholder="Tambah materi baru...">
                         <button type="submit">Tambah</button>
@@ -245,7 +256,7 @@
                     
                     <!-- Fitur Pencarian / Filter (Dengan teknik Debounce) -->
                     <label for="search-input" class="sr-only">Cari Materi</label>
-                    <input type="text" id="search-input" placeholder="🔍 Cari materi..." style="flex: 1;">
+                    <input type="text" id="search-input" placeholder="🔍 Cari materi...">
                 </div>
 
                 <div style="text-align: right; margin-bottom: 20px;">
