@@ -49,20 +49,3 @@ Semantic HTML: Menggunakan tag seperti <header>, <main>, <section>.
 Keyboard Navigation: Indikator visual (garis dashed tebal) saat pengguna bernavigasi menggunakan tombol Tab. Manajemen focus dikembalikan ke input form setelah interaksi.
 
 Screen Reader Support: Menggunakan atribut aria-live, aria-valuenow, aria-label, serta class .sr-only untuk memastikan pengguna disabilitas (Tunanetra) dapat memahami konteks aplikasi.
-
-💻 Cara Menjalankan Project (Lokal)
-
-Karena project ini dibangun menggunakan Vanilla JS tanpa dependensi framework, Anda tidak perlu melakukan proses build/install.
-
-Clone repository ini:
-
-git clone https://github.com/username-anda/course-tracker-pro.git
-
-
-Buka folder project.
-
-Klik dua kali pada file index.html untuk membukanya langsung di browser pilihan Anda.
-
-🚀 Rencana Pengembangan Selanjutnya (Next Steps)
-
-Untuk melengkapi tahap akhir dari silabus pelatihan (Front End Frameworks), project ini direncanakan untuk di-refactor (ditulis ulang) menggunakan framework modern (seperti React, Vue, atau Angular). Hal ini bertujuan untuk membandingkan pengalaman development, manajemen state, dan struktur komponen antara Vanilla JS dengan Framework JS.
